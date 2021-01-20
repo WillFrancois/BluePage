@@ -14,7 +14,7 @@ body{
 
 #logo{
     margin-left: 2vw;
-    font-size: 2em;
+    font-size: 4vh;
 }
 
 nav{
@@ -47,6 +47,7 @@ nav > a, nav > #left-div > a{
     height: 100%;
     color: white;
     width: 100%;
+    z-index: 1;
 }
 
 .billboard > figure{
