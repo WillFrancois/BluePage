@@ -25,9 +25,10 @@ nav{
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
-nav > a, nav > #left-div > a{
+nav a{
     color: black;
     text-decoration: none;
 }
@@ -50,12 +51,6 @@ nav > a, nav > #left-div > a{
     z-index: 1;
 }
 
-.billboard > figure{
-    margin: 1vh 0 0 0;
-    z-index: 1;
-}
-
-
 #door-img{
     display: inherit;
     float: left;
@@ -65,18 +60,18 @@ nav > a, nav > #left-div > a{
     z-index: 1;
 }
 
-.billboard > h2{
+.billboard h2{
     margin: 2vh 0 0 0;
     font-size: 3em;
 }
 
-.billboard > p{
+.billboard p{
     width: 75%;
     font-size: 1.5em;
     padding: 20px;
 }
 
-.billboard > *{
+.billboard *{
     z-index: 1;
     animation: onloadOpacity 1s;
 }
@@ -92,7 +87,7 @@ nav > a, nav > #left-div > a{
     
     position: absolute;
     right: 8vw;
-    z-index: 0;
+    z-index: -1;
     
     opacity: 50%;
     background-color: #251199;
@@ -109,7 +104,7 @@ nav > a, nav > #left-div > a{
     
     position: absolute;
     left: 10vw;
-    z-index: 0;
+    z-index: -1;
     
     opacity: 50%;
     background-color: #251199;
@@ -127,7 +122,7 @@ nav > a, nav > #left-div > a{
 
     position: absolute;
     left: 15vw;
-    z-index: 0;
+    z-index: -1;
     
     opacity: 50%;
     background-color: #251199;
